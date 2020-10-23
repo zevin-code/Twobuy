@@ -1,0 +1,3 @@
+<view class="searchbar" >
+ <navigator url='/pages/search/search' class="search-entrance"></navigator>
+</view>

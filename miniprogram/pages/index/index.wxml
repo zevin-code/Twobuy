@@ -1,0 +1,103 @@
+<import src="/pages/template/goodsCard.wxml"/>
+<view style="height:100%;position:fixed;width:100%;">
+  <scroll-view scroll-y="true"  bindscroll="scroll" style="height:100%;" lower-threshold='100' bindscrolltolower="pullUpLoad">
+    <view class="half-top">
+      <view class="top-group">
+        <view class="top-infor">
+          <view class="campus">
+            <image class="where" src="/images/where.png"></image>
+            <view class="campus-name">太原理工大学明向校区</view>
+          </view>
+          <image class="search" src="/images/search-icon.png" bindtap="goToSearch"></image>
+        </view>
+      </view>
+
+      <swiper autoplay class="swiper-banner-group">
+        <swiper-item>
+          <image mode='aspectFill' src="/images/banner1.png"></image>
+        </swiper-item>
+        <swiper-item>
+          <image mode='aspectFill' src="/images/banner2.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+          <image mode='aspectFill' src="/images/banner3.jpg"></image>
+        </swiper-item>
+      </swiper>
+
+      <view class="top-menu">
+        <view class="mini-menu">
+          <image src="/images/rent.png"></image>
+          <text>租赁市场</text>   
+        </view>
+        <view class="mini-menu">
+          <image src="/images/auction.png"></image>
+          <text>自营店铺</text>
+        </view>
+        <view class="mini-menu" bindtap="goToReward">
+          <image src="/images/need.png"></image>
+          <text>悬赏大厅</text>
+        </view>
+        <view class="mini-menu" bindtap="goToAllItem">
+          <image src="/images/categories.png"></image>
+          <text>所有分类</text>
+        </view>
+      </view>
+
+      <scroll-view class="mid-tabbar {{scrollTop > 280 ? 'page-group-position' : ''}}" scroll-x="{{true}}" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+        <block wx:for="{{multiArray}}" wx:key="{{index}}" wx:for-index="idx" wx:for-item="navItem">
+          <view class="nav-item {{currentTab == idx ?'active':''}}"  data-current="{{idx}}" bindtap="switchNav">{{multiArray[idx]}}</view>
+        </block>
+      </scroll-view>
+      <view class="blank-area {{scrollTop > 280 ? 'blank-area-position' : ''}}"></view>
+
+      <!-- <swiper class="tab-box" current="{{currentTab}}" duration="300" bindchange="switchTab">        
+        <swiper-item wx:for="{{multiArray}}" wx:for-item="tabItem" wx:for-index="idx" wx:key="idx" class="tab-content"> -->
+  
+      <view class="goodsList" >
+      
+        <block  wx:for="{{dataList}}" wx:key="{{index}}">
+          <!-- <view>
+            <template is="goodsCard" data="{{...item}}"/>
+          </view> -->
+          <view class="goods-list">
+            <view class="goods-group" id="{{item._id}}" bindtap="goToDetail">
+              
+              <image class="goods-image" lazy-load="flase" mode='aspectFill' src="{{item.fileIDs[0]}}"></image>
+              <view class="goods-infor">
+                <view class="goods-name-bg">
+                  <text class="goods-name">{{item.goodsname}}</text>
+                </view>
+                <view class="price-now">
+                  <text class="goods-price">¥{{item.goodsprice}}</text>
+                  <text class="goods-now">{{item.goodsnow}}人想要</text>
+                </view>
+              </view>   
+              <view class="seller">
+                <view class="divline"></view>
+                <view class="seller-group">
+                  <image class="seller-head" src="{{item.useravatar}}"></image>
+                  <text class="seller-name">{{item.username}}</text>
+                  <!-- <image class="realname" src="/images/user/green.png"></image>
+                  <image class="credit" src="/images/user/blue.png"></image> -->
+                </view>
+              </view>
+            </view>
+
+          </view>
+        </block>
+
+        <view class="loading">
+          <text  hidden="{{!loadMore}}">正在载入更多...</text>
+          <text  hidden="{{!loadAll}}">抱歉。没有更多了...</text>
+        </view>
+      </view>
+        <!-- </swiper-item>
+      </swiper> -->
+
+    </view>
+  </scroll-view>
+</view>
+
+<view class="container">
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>

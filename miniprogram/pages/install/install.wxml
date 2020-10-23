@@ -1,0 +1,20 @@
+<view class="install-item">
+  <view class="item-group" bindtap="goToPersoninfor">
+    <text>个人信息</text>
+    <image class="arrow" src="/images/person/arrow.png"></image>
+  </view>
+  <view class="item-group">
+    <text>账号管理</text>
+    <image class="arrow" src="/images/person/arrow.png"></image>
+  </view>
+  <view class="item-group">
+    <text>关于我们</text>
+    <image class="arrow" src="/images/person/arrow.png"></image>
+  </view>
+  <view class="item-group">
+    <text>意见反馈</text>
+    <image class="arrow" src="/images/person/arrow.png"></image>
+  </view>
+</view>
+
+<button class="close-user">退出登录</button>

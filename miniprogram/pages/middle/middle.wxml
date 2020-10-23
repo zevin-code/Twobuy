@@ -1,0 +1,12 @@
+<view>{{price}}</view>
+<view class="input" style="bottom:{{bottom}}px">
+
+<view class="area">
+
+<input value="{{msgContent}}" placeholder='请输入文字内容' bindconfirm="sendMsgConfirm" bindinput='getGoodsName' adjust-position="{{false}}" bindfocus="foucus" bindblur="blur"></input>
+
+<view class="button" bindtap='sendMsgButton'>发送</view>
+
+</view>
+
+</view>

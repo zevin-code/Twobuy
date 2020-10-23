@@ -1,0 +1,205 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "wx83695ba8e3d1cfcd",
+	"projectname": "Twobuy",
+	"libVersion": "2.8.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发布一口价",
+					"pathName": "pages/release/release",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "详情",
+					"pathName": "pages/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/detail/detail",
+					"pathName": "pages/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/buttonwindow/buttonwindow",
+					"pathName": "pages/buttonwindow/buttonwindow",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/searchres/searchres",
+					"pathName": "pages/searchres/searchres",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/reward/reward",
+					"pathName": "pages/reward/reward",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/collectionlist/collectionlist",
+					"pathName": "pages/collectionlist/collectionlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/release-reward/release-reward",
+					"pathName": "pages/release-reward/release-reward",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/reward/reward",
+					"pathName": "pages/reward/reward",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/collectionlist/collectionlist",
+					"pathName": "pages/collectionlist/collectionlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/testtwo/testtwo",
+					"pathName": "pages/testtwo/testtwo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/testthree/testthree",
+					"pathName": "pages/testthree/testthree",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/testthree/testthree",
+					"pathName": "pages/testthree/testthree",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/testthree/testthree",
+					"pathName": "pages/testthree/testthree",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/testthree/testthree",
+					"pathName": "pages/testthree/testthree",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/testthree/testthree",
+					"pathName": "pages/testthree/testthree",
+					"scene": null
+				}
+			]
+		}
+	}
+}

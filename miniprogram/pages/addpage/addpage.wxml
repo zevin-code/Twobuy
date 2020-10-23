@@ -1,0 +1,30 @@
+
+<view class="release-tip-group">
+  <text class="release-tip">发布须知</text>
+</view>
+
+<view class="btn" bindtap="powerDrawer" data-statu="open">好的，知道啦</view>
+  <!--mask-->
+  <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+  <!--content-->
+  <!--使用animation属性指定需要执行的动画-->
+  <view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
+    <view class="releas-menu">
+      <view class="drawer_title line" bindtap="goToRelease">
+        <image src="/images/jia.png"></image>
+        <text>一口价</text>   
+      </view>
+      <!-- <view class="drawer_title line">
+        <image src="/images/auction.png"></image>
+        <text>发布拍卖</text>
+      </view> -->
+      <view class="drawer_title line" bindtap="goToAdditemPage">
+        <image src="/images/rent.png"></image>
+        <text>发布租赁</text>
+      </view>
+      <view class="drawer_title line" bindtap="goToReleaseReward">
+        <image src="/images/need.png"></image>
+        <text>发布悬赏</text>
+      </view>
+  </view>
+  </view>

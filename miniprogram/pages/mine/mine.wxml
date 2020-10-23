@@ -1,0 +1,87 @@
+<view class="user-infor">
+    <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" class="user-name" bindgetuserinfo="handUserInfo">登录/注册</button>
+    <block wx:else>
+      <image class="user-head" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="user-name">{{userInfo.nickName}}</text>
+    </block>
+</view>
+ 
+<view class="red-tab">
+  <view class="red-item">
+    <view class="my-release">0</view>
+    <text>我发布的</text>
+  </view>
+  <view class="red-item">
+    <view class="my-sell">0</view>
+    <text>卖出/租出</text>
+  </view>
+  <view class="red-item">
+    <view class="my-rent">0</view>
+    <text>买到/租到</text>
+  </view>
+</view>
+
+<view class="collection-group">
+  <view class="collection-top">
+    <text class="collection-top-left" bindtap="goToCollectionList">我的收藏</text>
+    <view class="collection-top-right">
+      <view class="col-number">{{collectionList.length}}</view>
+      <text bindtap="goToCollectionList">查看全部</text>
+    </view>
+  </view>
+
+</view>
+  <scroll-view class="collection-goods" scroll-x="{{true}}">
+ 
+      <navigator class="collection-goods-image" wx:for="{{collectionList}}" wx:key="{{index}}">
+        <image class="collection-goods-image" src="{{item.fileIDs[0]}}" mode='aspectFill' bindtap="goToDetail" id="{{item.goodsid}}"></image>
+      </navigator>
+ 
+</scroll-view>
+
+<view class="person-item">
+  <view class="item-common">
+   <view class="item-common-left">
+     <image class="myauction-image" src="/images/person/myauction.png"></image>
+     <text>我的拍卖</text>
+   </view>
+   <image class="Arrow" src="/images/person/arrow.png"></image>
+  </view>
+</view>
+
+<view class="person-item">
+  <view class="item-common">
+    <view class="item-common-left">
+      <image class="realname-image" src="/images/person/realname.png"></image>
+      <text>实名认证</text>
+    </view>
+    <view class="realname-right">
+      <text>实名认证可获五元红包！</text>
+      <image class="Arrow" src="/images/person/arrow.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="person-item">
+  <view class="item-common">
+  <view class="item-common-left">
+    <image class="message-image" src="/images/person/message.png"></image>
+    <text>意见反馈</text>
+  </view>
+    <image class="Arrow" src="/images/person/arrow.png"></image>
+  </view>
+</view>
+
+<view class="person-item">
+  <view class="item-common" bindtap="goToInstall">
+  <view class="item-common-left">
+    <image class="install-image" src="/images/person/install.png"></image>
+    <text>设置</text>
+  </view>
+    <image class="Arrow" src="/images/person/arrow.png"></image>
+  </view>
+</view>
+
+<view class="container">
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>

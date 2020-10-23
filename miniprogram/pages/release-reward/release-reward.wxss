@@ -1,0 +1,259 @@
+page{
+  background-color: #f5f5f5;
+}
+
+.input-title{
+  width: 90.4%;
+  border-radius: 20rpx;
+  background-color: #fff;
+  margin-left: 36rpx;
+  margin-top: 36rpx;
+}
+
+.goodsname{
+  font-size: 28rpx;
+  padding: 36rpx 42rpx;
+  height: 78rpx;
+  line-height: 42rpx;
+}
+
+.placeholder-style{
+  color: #B3BBC6;
+}
+
+.goodsDetail{
+  font-size: 28rpx;
+  padding: 36rpx 42rpx;
+  height: 328rpx;
+  line-height: 42rpx;
+}
+
+.tip-one{
+  width: 610rpx;
+  height: 82rpx;
+  margin-left: 70rpx;
+  margin-top: 16rpx;
+  margin-bottom: 16rpx;
+}
+
+.tip-one text{
+  font-size: 28rpx;
+  color: #B3BBC6;
+}
+
+.input-reason{
+  width: 90.4%;
+  height: 400rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+  margin-left: 36rpx;
+  margin-top: 56rpx;
+
+}
+
+.photo{
+  height: 214rpx;
+  width: 214rpx;
+  border-radius: 20rpx;
+}
+
+.add-item{
+  height: 200rpx;
+  background-color: #fff;
+  position: fixed;
+	bottom: 0;
+	width: 100%;
+  border-radius: 60rpx 60rpx 0 0;
+  box-shadow:0 4px 20px rgba(0, 0, 0, 0.05); 
+}
+
+.add-item button{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 36rpx;
+  width: 90.4%;
+  height: 84rpx;
+  background-color:#F25551;
+  border-radius: 60rpx;
+  font-size: 28rpx;
+  color: #fff;
+  box-shadow:0 3px 40px rgba(242, 85, 81, 0.4); 
+}
+
+
+.add-item button:active{
+  background-color:rgb(209, 13, 39);
+}
+
+.campus{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 36rpx;
+}
+
+.where{
+  width: 36rpx;
+  height: 36rpx;
+  
+}
+
+.campus-name{
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+
+.install-item{
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.item-group{
+  font-size: 28rpx;
+  color: #303030;
+  height: 96rpx;
+  padding: 0 36rpx 0 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.item-group-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow{
+  width: 13rpx;
+  height: 18rpx;
+  margin-left: 20rpx;
+}
+
+.goods-price{
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #F25551;
+}
+
+.blank-blank{
+  width: 100%;
+  height: 220rpx;
+}
+
+.iamgeRootAll {
+  margin: 20rpx 36rpx 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imgItem {
+  position: relative;
+  width: 214rpx;
+  height: 214rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-bottom: 18rpx;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+
+.closeImg {
+  position: absolute;
+  top: 8rpx;
+  right: 8px;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.photo {
+  width: 72rpx;
+  height: 58rpx;
+  margin-left: 71rpx;
+  margin-top: 80rpx;
+}
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #303030;
+  opacity: 0.5;
+  overflow: hidden;
+}
+ 
+/*content*/
+ 
+.drawer_box {
+  width: 510rpx;
+  height: 300rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 30%;
+  z-index: 1001;
+  background: #fff;
+  margin-left: 120rpx;
+  border-radius: 20rpx;
+}
+ 
+.drawer_title {
+  margin-top: 36rpx;
+  text-align: center;
+  color: #BCC3CB;
+  font-size: 24rpx;
+}
+
+.input-price{
+  height: 72rpx;
+  width: 400rpx;
+  background-color: #fff;
+  border-bottom: 2rpx solid #F25551;
+  font-size: 28rpx; 
+  margin-left: 52rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.button-group{
+  display: flex;
+  justify-content: space-between; 
+  margin: 36rpx 56rpx;
+}
+
+.btn-confirm{
+  height: 68rpx;
+  width: 138rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color:#F25551;
+  border-radius: 60rpx;
+  font-size: 28rpx;
+  color: #fff;
+  box-shadow:0 3px 40px rgba(242, 85, 81, 0.4); 
+}
+
+.btn-cancel{
+  height: 68rpx;
+  width: 160rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color:#fff;
+  border-radius: 60rpx;
+  font-size: 28rpx;
+  color: #F25551;
+}

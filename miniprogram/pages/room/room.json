@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "聊天室",
+  "navigationBarBackgroundColor": "#F5F5F5",
+  "usingComponents": {
+    "chatroom": "/components/chatroom/chatroom"
+  }
+}

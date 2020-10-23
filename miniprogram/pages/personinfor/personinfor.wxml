@@ -1,0 +1,30 @@
+<view class="personinfor-item">
+  <view class="item-group" bindtap="changeUserhead">
+    <text>头像</text>
+    <view class="item-group-right">
+      <image class="user-head" src="{{userHead}}"></image>
+      <image class="arrow" src="/images/person/arrow.png"></image>
+    </view>
+  </view>
+  <view class="item-group">
+    <text>用户名</text>
+    <view class="item-group-right">
+      <text class="user-name">九亿少女的梦</text>
+      <image class="arrow" src="/images/person/arrow.png"></image>
+    </view>
+  </view>
+  <view class="item-group">
+    <text>性别</text>
+    <view class="item-group-right">
+      <text class="user-name">男</text>
+      <image class="arrow" src="/images/person/arrow.png"></image>
+    </view>
+  </view>
+  <view class="item-group">
+    <text>生日</text>
+    <view class="item-group-right">
+      <text class="user-name">未设置</text>
+      <image class="arrow" src="/images/person/arrow.png"></image>
+    </view>
+  </view>
+</view>

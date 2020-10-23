@@ -1,0 +1,36 @@
+<view class="tabbar_box {{isIphoneX?'iphoneX-height':''}}" style="background-color:{{tabbar.backgroundColor}}">
+  <block wx:for="{{tabbar.list}}" wx:key="{{item.pagePath}}">
+    <navigator wx:if="{{item.isSpecial}}" class="tabbar_nav" hover-class="none" url="{{item.pagePath}}" style="color:{{tabbar.selectedColor}}" open-type="navigate" >
+      <view class='special-wrapper' data-statu="open">
+        <image class="tabbar_icon" src="{{item.iconPath}}"></image>
+  </view>
+      <image class='special-text-wrapper' bindtap="powerDrawer"></image>
+      <!-- <text>{{item.text}}</text> -->
+      
+    </navigator>
+
+    <navigator wx:else class="tabbar_nav" hover-class="none" url="{{item.pagePath}}" style="color:{{item.selected ? tabbar.selectedColor : tabbar.color}}" open-type="switchTab">
+      <image class="tabbar_icon" src="{{item.selected ? item.selectedIconPath : item.iconPath}}"></image>
+      <text>{{item.text}}</text>
+    </navigator>
+  </block>
+</view>
+
+<!-- <view class="btn" bindtap="powerDrawer" data-statu="open">button</view> -->
+  <!-- <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+  <view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
+    <view class="releas-menu">
+      <view class="drawer_title line">
+        <image src="/images/tabbar/release_selected.png"></image>
+        <text>一口价</text>   
+      </view>
+      <view class="drawer_title line">
+        <image src="/images/tabbar/release_selected.png"></image>
+        <text>发布拍卖</text>
+      </view>
+      <view class="drawer_title line">
+        <image src="/images/tabbar/release_selected.png"></image>
+        <text>发布租赁</text>
+      </view>
+  </view>
+  </view> -->

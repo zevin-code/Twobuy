@@ -1,0 +1,303 @@
+page{
+  background-color: #F0F0F0;
+}
+
+.bg-image{
+  width: 100%;
+  height: 465rpx;
+  position: absolute;
+  background-color: #F25551;
+}
+
+.user-infor{
+  display: flex;
+  align-items: center;
+}
+
+.user-head{
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 44rpx;
+  margin-right: 20rpx;
+}
+
+.user-item{
+  display: flex;
+  width: 90.4%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  float: left;
+  padding: 0 36rpx;
+  z-index: 99;
+  top: 330rpx;
+}
+
+.user-name{
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.edit-icon{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  box-shadow:0 3px 40px rgba(242, 85, 81, 0.4);
+}
+
+.mid-menu{
+  height: 72rpx;
+  /* height: 557rpx; */
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.mid-menu :active{
+  height: 72rpx;
+  /* height: 557rpx; */
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+
+.reward-card{
+  margin:20rpx 36rpx 0;
+  border-radius: 20rpx;
+  background-color: #fff;
+  padding: 20rpx 26rpx 0;
+  height: 100%;
+}
+
+.reward-user{
+  display: flex;
+  align-items: center;
+}
+
+.reward-user-head{
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 25rpx;
+  margin-right: 16rpx;
+}
+
+.reward-user-name{
+  font-size: 24rpx;
+  color: #303030;
+}
+
+.time-release{
+  font-size: 24rpx;
+  color: #BCC3CB;
+}
+
+.user-time{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.reward-text{
+  font-size: 28rpx;
+  color: #303030;
+  line-height: 46rpx;
+  margin-bottom: 100rpx;
+}
+
+.reward-images{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.images-small{
+  width: 200rpx;
+  height: 189rpx;
+  border-radius: 20rpx;
+  /* margin-right: 16rpx; */
+  background-color: #f5f5f5;
+  margin-top: 6rpx;
+}
+
+.images-big-top{
+  margin-top: 20rpx;
+}
+
+.join-person{
+  height: 70rpx;
+  width: 100%;
+  background-color: #FAFAFA;
+  border-radius: 35rpx;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hand-button{
+  width: 158rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  background-color: #F25551;
+  display: flex;
+  align-items: center;
+  box-shadow:0 3px 40px rgba(242, 85, 81, 0.4);
+
+}
+
+.hand-icon{
+  width: 35.8rpx;
+  height: 35.4rpx;
+  margin-right: 12rpx;
+  margin-left: 30rpx;
+}
+
+.hand-text{
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.reward-card-down{
+  margin: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-right{
+  display: flex;
+  justify-content: start;
+}
+
+.detail-item{
+  margin-right: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.left-look{
+  width: 32rpx;
+  height: 24rpx;
+  margin-right: 8rpx;
+}
+
+.report-tip{
+  font-size: 24rpx;
+  color: #BCC3CB;
+  display: inline-block;
+}
+
+.reward-money-tip{
+  font-size: 24rpx;
+  color: #BCC3CB;
+  margin-left: 12rpx;
+  margin-top: 14rpx;
+
+}
+
+.report-icon{
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 8rpx;
+}
+
+.left-message{
+  width: 27rpx;
+  height: 27rpx;
+  margin-right: 8rpx;
+}
+
+.reward-money{
+  display: flex;
+  justify-content: start;
+}
+
+.images-null{
+  width: 100%;
+  height: 20rpx;
+}
+
+.images-big{
+  width: 388rpx;
+  height: 278rpx;
+  border-radius: 20rpx;
+}
+
+.loading {
+  width: 678rpx;
+  text-align: center;
+  position: relative;
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  color: #BCC3CB;
+}
+
+.page-group-position{
+  position: fixed;
+  top: 10rpx;
+  background-color:#fff;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+
+.top-menu{
+  position: fixed;
+  padding: 20rpx 36rpx;
+  background-color: #fff;
+  font-size: 24rpx;
+  color: #BCC3CB;
+  top: 0;
+  width: 100%;
+}
+
+.mid-tabbar{
+  width: 100%;
+  /* box-sizing: border-box;
+  overflow: hidden;
+  line-height:80rpx; */
+  background-color: #fff;
+  z-index: 99;
+  padding: 20rpx 0 6rpx;
+}
+
+.nav-item {
+    width: 20%;
+    height: 70rpx;
+    display: inline-block;
+    text-align: center;
+    font-size: 24rpx;
+  color: #BCC3CB;
+}
+
+.nav-item.active{
+  font-size: 36rpx;
+  color: #303030;
+  font-weight: 600;
+}
+
+.tab-box{
+  height: 100%;
+  /* box-sizing: border-box; */
+  width: 100%;
+  /* float: left; */
+  position: absolute;
+}
+
+.tab-content{
+    overflow-y: scroll;
+    
+}
+
+scroll-view ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+
+
+.blank-area-position{
+  height:86rpx;
+  background-color: #f0f0f0;
+  width: 100%;
+}

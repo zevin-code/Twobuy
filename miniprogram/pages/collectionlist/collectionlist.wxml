@@ -1,0 +1,28 @@
+<view class="top-tip">
+  <view class="top-tip-item">
+    <text class="top-tip-num">共有{{collectionList.length}}件宝贝</text>
+      <image class="search-icon" src="/images/search-icon.png" bindtap="goToSearch"></image>
+  </view>
+</view>
+
+<view class="cardlist">
+<block wx:for="{{collectionList}}" wx:key="{{index}}">
+<view class="goodscard-group" bindtap="goToDetail" id="{{item.goodsid}}">
+    <view class="user-delete">
+      <view class="user-team">
+        <image class="user-head" src="{{item.selleravatar}}"></image>
+        <text class="user-name">{{item.sellername}}</text>
+      </view>
+      <image class="deletegoods" src="/images/icon-cancel.png" id="{{item._id}}" bindtap="deleteCollect"></image>
+    </view>
+    <view class="image-detail">
+      <image class="goods-image" mode='aspectFill' src="{{item.fileIDs[0]}}"></image>
+      <view class="goods-detail">
+        <text class="goods-name">{{item.goodsname}}</text>
+        <text class="campus-name">明向校区</text>
+        <text class="goods-price">¥{{item.goodsprice}}</text>
+      </view>
+    </view>
+</view>
+</block>
+</view>

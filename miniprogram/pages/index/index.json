@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#FFF",
+  "navigationBarTitleText": "二佰",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh":true,
+  "onReachBottomDistance":1,
+    "usingComponents": {
+      "tabbar": "../../tabbarComponent/tabbar"
+    }
+}

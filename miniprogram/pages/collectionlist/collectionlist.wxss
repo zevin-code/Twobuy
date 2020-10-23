@@ -1,0 +1,120 @@
+page{
+  background-color: #f0f0f0;
+}
+
+scroll-view ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+
+.top-tip{
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+.top-tip-item{
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx 36rpx;
+}
+
+.top-tip-num{
+  font-size: 24rpx;
+  color: #B3BBC6;
+}
+
+.search-icon{
+  width: 46.8rpx;
+  height: 32.6rpx;
+  margin-right: 18rpx;
+}
+
+.goodscard-group{
+  margin: 0 36rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+   height: 100%;
+  padding: 25rpx 36rpx;
+  margin-bottom: 20rpx;
+}
+
+.user-delete{
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-team{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.user-head{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+  margin-right: 10rpx;
+}
+
+.user-name{
+  font-size: 24rpx;
+  color: #303030;
+}
+
+.image-detail{
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods-image{
+  width: 208rpx;
+  height: 196rpx;
+  border-radius: 20rpx;
+}
+
+.goods-detail{
+  padding-top: 14rpx;
+  flex: 1;
+  margin-left: 20rpx;
+}
+
+.goods-name{
+  height: 60rpx;
+  background: #fff;
+  font-size: 24rpx;
+  line-height: 32rpx;
+  display:-webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+.deletegoods{
+  width: 18rpx;
+  height: 18rpx;
+  margin-top: 6rpx;
+}
+
+.cardlist{
+  margin-top: 92rpx;
+}
+
+.campus-name{
+  font-size: 24rpx;
+  color: #BCC3CB;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+  display: block;
+}
+
+.goods-price{
+  font-size: 36rpx;
+  color: #F25551;
+  font-weight: 600;
+  bottom: 10rpx;
+}

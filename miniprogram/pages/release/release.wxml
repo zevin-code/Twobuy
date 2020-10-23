@@ -1,0 +1,78 @@
+
+<view class="input-title">
+  <textarea class="goodsname" focus placeholder="请输入宝贝名字吧…" placeholder-class="placeholder-style"  maxlength="42" cursor-spacing="0" bindinput="getGoodsName" />
+</view>
+
+<view class="tip-one">
+  <text>详细描述一下宝贝的购买时间，原价，品牌型号，规格尺寸，新旧程度等信息。</text>
+</view>
+
+<view class="input-reason">
+  <textarea class="goodsDetail" placeholder="详细信息写在这里哦" placeholder-class="placeholder-style"  maxlength="200" cursor-spacing="0" bindinput="getGoodsDetail"/>
+</view>
+
+
+<view class="iamgeRootAll">
+  <block wx:for="{{imgList}}" wx:key="index">
+    <view class="imgItem">
+      <image class="img" src='{{item}}' mode='aspectFill'></image>
+      <image class="closeImg" bindtap="DeleteImg" src="../../images/close.png" data-index="{{index}}"></image>
+    </view>
+  </block>
+  <!-- 选择图片按钮 -->
+  <view wx:if="{{imgList.length<9}}" class="imgItem" bindtap="ChooseImage">
+    <image class="photo" src="/images/release/add-image.png"></image>
+  </view>
+</view>
+<view class="campus">
+  <image class="where" src="/images/where.png"></image>
+  <view class="campus-name">太原理工大学明向校区</view>
+</view>
+
+<view class="install-item">
+  <view class="item-group" bindtap="powerDrawer" data-statu="open" mode="widthFix">
+    <text>价格</text>
+    <view class="item-group-right">
+      <text class="goods-price">¥{{goodsprice}}</text>
+      <image class="arrow" src="/images/person/arrow.png"></image>
+    </view>
+  </view>
+  <view class="item-group">
+      <text>分类</text>
+      <view class="item-group-right">
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+          <view class="picker">
+            {{multiArray[0][multiIndex[0]]}} - {{multiArray[1][multiIndex[1]]}}
+          </view>
+        </picker>
+        <image class="arrow" src="/images/person/arrow.png"></image>
+      </view>
+  </view>
+
+</view>
+
+
+
+<!--mask-->
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+<!--content-->
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+ 
+  <!--drawer content-->
+  <view class="drawer_title">请输入你心仪的价格：</view>
+  <view class="drawer_content">
+    <input class="input-price" focus bindinput="getGoodsPrice"></input>
+  </view>
+  <view class="button-group">
+    <button class="btn-cancel" bindtap="powerDrawer" data-statu="close">再想想</button>
+    <button class="btn-confirm" bindtap="confirm" data-statu="close">确定</button>
+  </view>
+  
+</view>
+
+<view class="blank-blank"></view>
+
+<view class="add-item">
+<button type="primary" bindtap="publish" class="button-release">发布</button>
+</view>

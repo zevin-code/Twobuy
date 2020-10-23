@@ -1,0 +1,28 @@
+<template name="goodsCard">
+  <view class="goods-list">
+      <view class="goods-group" id="{{item._id}}" bindtap="goToDetail">
+         
+        <image class="goods-image" lazy-load="flase" mode='aspectFill' src="{{item.fileIDs[0]}}"></image>
+        <view class="goods-infor">
+          <view class="goods-name-bg">
+            <text class="goods-name">{{item.goodsname}}</text>
+          </view>
+          <view class="price-now">
+            <text class="goods-price">¥{{item.goodsprice}}</text>
+            <text class="goods-now">{{item.goodsnow}}人想要</text>
+          </view>
+        </view>   
+        <view class="seller">
+          <view class="divline"></view>
+          <view class="seller-group">
+            <image class="seller-head" src="{{item.useravatar}}"></image>
+            <text class="seller-name">{{item.username}}</text>
+            <!-- <image class="realname" src="/images/user/green.png"></image>
+            <image class="credit" src="/images/user/blue.png"></image> -->
+          </view>
+        </view>
+      </view>
+
+  </view>
+
+</template>

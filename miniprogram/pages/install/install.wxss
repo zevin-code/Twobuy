@@ -1,0 +1,35 @@
+.install-item{
+  width: 100%;
+  height: 36rpx;
+  font-size: 28rpx;
+  color: #303030;
+}
+
+.item-group{
+  padding: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow{
+  width: 13rpx;
+  height: 18rpx;
+}
+
+.close-user{
+  width: 678rpx;
+  height: 84rpx;
+  border: 1rpx solid #F25551;
+  background-color: #fff;
+  border-radius: 42rpx;
+  font-size: 28rpx;
+  color: #F25551;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  bottom:0;
+  position: fixed;
+  margin-left: 36rpx;
+  margin-bottom: 36rpx;
+}

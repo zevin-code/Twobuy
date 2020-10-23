@@ -1,0 +1,359 @@
+
+.detail-image{
+  width: 100%;
+  height: 750rpx;
+  z-index: -1;
+}
+
+.detail-group{
+  /* height: 60%; */
+  padding: 36rpx;
+  margin-top: -70rpx;
+  background-color: #fff;
+  border-radius: 60rpx 60rpx 0 0;
+  box-shadow:0 4px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.detial-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods-name{
+  font-size: 36rpx;
+  font-weight: 600;
+  display:-webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  /* height: 100rpx; */
+}
+
+.goods-price{
+  font-size: 36rpx;
+  color: #F25551;
+  font-weight: 600;
+  margin-left: 36rpx;
+}
+
+.detail-user{
+  display: flex;
+  align-items: center;
+}
+
+.user-head{
+  width: 52rpx;
+  height: 52rpx;
+  margin-right: 20rpx;
+  border-radius: 26rpx;
+}
+
+.user-name{
+  font-size: 28rpx;
+}
+
+.detail-left{
+  margin-top: 4rpx;
+  display: flex;
+  justify-content: start;
+}
+
+.detail-left-item{
+  margin-right: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.detail-left-item image{
+  margin-right: 6rpx;
+  margin-top: 2rpx;
+}
+
+.left-look{
+  width: 32rpx;
+  height: 24rpx;
+}
+
+.look-number{
+  font-size: 24rpx;
+  color: #BCC3CB;
+}
+
+.left-like{
+  width: 29rpx;
+  height: 27rpx;
+}
+
+.like-number{
+  font-size: 24rpx;
+  color: #BCC3CB;
+}
+
+.left-message{
+  width: 27rpx;
+  height: 27rpx;
+}
+
+.message-number{
+  font-size: 24rpx;
+  color: #BCC3CB;
+}
+
+.detail-mid{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16rpx;
+  margin-bottom: 30rpx;
+}
+
+.detail-user-where{
+  margin-top: 36rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.detail-right{
+  font-size: 28rpx;
+  color: #BCC3CB;
+}
+
+.detail-line{
+  width: 678rpx;
+  height: 1rpx;
+  background-color: #EFEEF4;
+}
+
+.detail-explain{
+  margin-top: 30rpx;
+  margin-bottom: 200rpx;
+  line-height: 46rpx;
+}
+
+.explain-tip{
+  display: block;
+  font-size: 28rpx;
+  color: #303030;
+  margin-bottom: 20rpx;
+}
+
+.explain-text{
+  font-size: 28rpx;
+  color: #606266;
+  
+}
+
+.message-group{
+  width: 100%;
+  margin-top: 36rpx;
+}
+
+.message-group-tip{
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #303030;
+}
+
+.person-head{
+  height: 58rpx;
+  width: 58rpx;
+  border-radius: 29rpx;
+}
+
+.message-item{
+  display: flex;
+  justify-content: start;
+  margin-top: 30rpx;
+}
+
+.message-item-right{
+  flex: 1;
+  margin-left: 14rpx;
+  line-height: 32rpx;
+}
+.love-number{
+  display: flex;
+  align-items: center;
+}
+
+.love-number image{
+  height: 23.3rpx;
+  width: 25rpx;
+  margin-right: 10rpx;
+}
+
+.love-number text{
+  font-size: 22rpx;
+  color: #BCC3CB;
+}
+
+.person-name{
+  font-size: 24rpx;
+  color: #303030;
+}
+
+.message-item-text{
+  font-size: 28rpx;
+  color: #303030;
+  margin-top: 20rpx;
+  line-height: 46rpx;
+}
+
+.message-item-top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24rpx;
+}
+
+.message-item-down{
+  margin-top: 24rpx;
+  display: flex;
+  justify-content: start;
+}
+
+.message-time{
+  font-size: 22rpx;
+  color: #BCC3CB;
+  margin-right: 12rpx;
+}
+
+.return-button{
+  font-size: 22rpx;
+  color: #F25551;
+}
+
+.return-button-yes{
+  font-size: 22rpx;
+  color: #BCC3CB;
+}
+
+.message-other{
+  widows: 100rpx;
+  border-radius: 10rpx;
+  background-color: #F5F5F5;
+  height: 120rpx;
+  padding: 20rpx;
+  margin-top: 24rpx;
+}
+
+.message-other-name{
+  font-size: 22rpx;
+  color: #BCC3CB;
+  display: block;
+}
+
+.message-other-text{
+  margin-top: 24rpx;
+  font-size: 24rpx;
+  color: #606266;
+}
+
+.more-message-button{
+  font-size: 24rpx;
+  color: #BCC3CB;
+  height: 62rpx;
+  width: 158rpx;
+  background-color: #fff;
+  border: 1rpx solid #BCC3CB;
+  border-radius: 31rpx;
+  margin-top: 36rpx;
+}
+
+.down-group{
+  /* padding: 36rpx; */
+  height: 160rpx;
+  background-color: #fff;
+  position: fixed;
+	bottom: 0;
+	width: 100%;
+  border-radius: 60rpx 60rpx 0 0;
+  box-shadow:0 4px 20px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.collection-icon{
+  width:42rpx;
+  height: 42rpx;
+}
+
+.share-icon{
+  width:42.3rpx;
+  height: 43rpx;
+}
+
+.message-icon{
+  width:39rpx;
+  height: 39rpx;
+}
+
+.down-item text{
+  font-size: 24rpx;
+  color: #303030;
+  margin-left: 10rpx;
+}
+
+.down-group-left{
+  display: flex;
+  justify-content: start;
+  margin-left: 36rpx;
+}
+
+.down-item{
+  display: flex;
+  align-items: center;
+  margin-right: 42rpx;
+}
+
+.button-buy{
+  width: 194rpx;
+  height: 82rpx;
+  background-color: #F25551;
+  border-radius: 41rpx;
+  font-size: 28rpx;
+  color: #fff;
+  box-shadow:0 3px 40px rgba(242, 85, 81, 0.4); 
+  margin-right: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.down-group-right{
+   display: flex;
+   justify-content: space-between;
+}
+
+.button-buy-seller{
+  width: 274rpx;
+  height: 82rpx;
+  background-color: #F25551;
+  border-radius: 41rpx;
+  font-size: 28rpx;
+  color: #fff;
+  box-shadow:0 3px 40px rgba(242, 85, 81, 0.4); 
+  margin-right: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.button-buy-down{
+  width: 194rpx;
+  height: 82rpx;
+  background-color: #fff;
+  border-radius: 41rpx;
+  font-size: 28rpx;
+  color: #F25551;
+  border: 1rpx solid #F25551;
+  margin-right: 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}

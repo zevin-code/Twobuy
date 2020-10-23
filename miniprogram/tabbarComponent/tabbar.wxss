@@ -1,0 +1,71 @@
+.tabbar_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 98rpx; 
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.2);
+    /* background-image: url("data:image/png;base64,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"); */
+}
+.tabbar_box.iphoneX-height{
+    padding-bottom: 66rpx;
+}
+.middle-wrapper{
+  position: absolute;
+  right: 310rpx;
+  bottom: 0;
+  background-color: #fff;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border-top: 2rpx solid #f2f2f3;
+}
+.middle-wrapper.iphoneX-height{
+  bottom: 66rpx;
+}
+.tabbar_nav{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20rpx;
+    color: #f25551;
+    height: 100%;
+    position: relative;
+}
+.tabbar_icon{
+    width: 43rpx;
+    height: 43rpx;
+    margin-bottom: 10rpx;
+}
+.special-wrapper{
+  top: -66rpx;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow:0 4px 20px rgba(242, 85, 81, 1); 
+  width: 122rpx;
+  height: 122rpx;
+
+  /* left: 77rpx;
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+   border-top: 2rpx solid #f2f2f3;
+  background-color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 6rpx; */
+}
+.special-wrapper .tabbar_icon{
+    width: 122rpx;
+    height:122rpx;
+}
+.special-text-wrapper{
+  width: 56rpx;
+  height: 56rpx;
+}

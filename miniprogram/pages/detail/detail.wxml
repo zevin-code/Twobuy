@@ -1,0 +1,135 @@
+<swiper class="detail-image">
+  <block wx:for="{{detailList.fileIDs}}" wx:key="{{detailList.fileIDs.index}}" >
+    <swiper-item>
+      <image class="detail-image" src="{{detailList.fileIDs[index]}}" mode='aspectFill' ></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="detail-group">
+  <view class="detial-top">
+    <text class="goods-name">{{detailList.goodsname}}</text>
+    <text class="goods-price">¥{{detailList.goodsprice}}    </text>
+  </view>
+  <view class="detail-user-where">
+    <view class="detail-user">
+      <image class="user-head" src="{{detailList.useravatar}}"></image>
+      <view class="user-name">{{detailList.username}}</view>
+    </view>
+    <view class="detail-right">明向校区</view>
+  </view>
+  <view class="detail-mid">
+    <view class="detail-left">
+      <view class="detail-left-item">
+        <image class="left-look" src="/images/detail/user-look.png"></image>
+        <text class="look-number">{{detailList.count}}</text>
+      </view>
+      <view class="detail-left-item">
+        <image class="left-like" src="/images/detail/user-like.png"></image>
+        <text class="like-number">{{detailList.goodsnow}}</text>
+      </view>
+      <view class="detail-left-item">
+        <image class="left-message" src="/images/detail/user-message.png"></image>
+        <text class="message-number">26</text>
+      </view>
+    </view>
+    <view class="detail-right">{{detailList.date}}</view>
+  </view>
+  <view class="detail-line"></view>
+  <view class="detail-explain">
+    <text class="explain-tip">卖家卖货说明：</text>
+    <text class="explain-text">{{detailList.goodsdetail}}</text>
+  </view>
+  <!-- <view class="detail-line"></view>
+  <view class="message-group">
+    <text class="message-group-tip">留言评论</text>
+    <view class="message-item">
+      <image class="person-head" src="/images/user/cycle-seller.png"></image>
+      <view class="message-item-right">
+        <view class="message-item-top">
+          <text class="person-name">捣蛋鬼小皮</text>
+          <view class="love-number">
+            <image src="/images/love-number-hover.png"></image>
+            <text class="love-person-number">22</text>
+          </view>
+        </view>
+        <text class="message-item-text">捷安特的二手车子很少见啊，想要！</text>
+        <view class="message-item-down">
+          <text class="message-time">3分钟前</text>
+          <text class="return-button">回复</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="message-group">
+    <view class="message-item">
+      <image class="person-head" src="/images/user/book-seller.png"></image>
+      <view class="message-item-right">
+        <view class="message-item-top">
+          <text class="person-name">落雪唯爱</text>
+          <view class="love-number">
+            <image src="/images/love-person.png"></image>
+            <text class="love-person-number">02</text>
+          </view>
+        </view>
+        <view class="message-item-text">
+          <text>捷安特的二手车子很少见啊，想要！如果留言特别长，就只展示四行。其他的隐藏起来。让用户通过全文按钮查看。</text>
+        </view>
+        <view class="message-item-down">
+          <text class="message-time">2019-4-6  21:24:12</text>
+          <text class="return-button-yes">已回复</text>
+        </view>
+        <view class="message-other">
+            <text class="message-other-name">139****...m1732</text>
+            <text class="message-other-text">谢谢大家的浏览！我们会继续加油的！没啥说的，码字好累...</text>
+        </view>
+      </view>
+    </view>
+  <button class="more-message-button">更多留言</button>  
+  </view> -->
+</view>
+
+<view class="down-group" wx:if="{{detailList.username === userName}}">
+  <view class="down-group-left">
+    <!-- <view class="down-item">
+      <image class="message-icon" src="/images/detail/message-tab.png"></image>
+      <text class="message-text">下架</text>
+    </view> -->
+    <view class="down-item">
+      <image class="share-icon" src="/images/detail/share-tab.png"></image>
+      <text class="share-text">分享</text>
+    </view>
+  </view>
+  <view class="down-group-right">
+      <button class="button-buy-down" bindtap="goodsEsc">下架</button>
+      <button class="button-buy-seller" bindtap="go" data-id="{{detailList._id}}">议价群!</button>
+  </view>
+</view>
+
+<view class="down-group" wx:else>
+  <view class="down-group-left">
+  
+    <view wx:if="{{!isCollected}}" class="down-item" catchtap="addCollectionList">
+      <image class="collection-icon" src="/images/detail/like-tab.png"></image>
+      <text class="collection-text">收藏</text>
+    </view>
+    <view wx:if="{{isCollected}}" class="down-item" catchtap="deleteCollectionList">
+      <image class="collection-icon" src="/images/love-number-hover.png"></image>
+      <text class="collection-text">已收藏</text>
+    </view>
+
+    <view class="down-item">
+      <image class="message-icon" src="/images/detail/message-tab.png"></image>
+      <text class="message-text">私信</text>
+    </view>
+    <view class="down-item">
+      <image class="share-icon" src="/images/detail/share-tab.png"></image>
+      <text class="share-text">分享</text>
+    </view>
+  </view>
+  <view class="down-group-right">
+      <button class="button-buy" bindtap="go" data-id="{{detailList._id}}">我想要</button>
+  </view>
+</view>
+
+

@@ -1,0 +1,210 @@
+page{
+  height: 1500rpx;
+}
+
+scroll-view ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+
+.user-infor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80rpx;
+}
+.user-head{
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 85rpx;
+  margin-bottom: 30rpx;
+}
+
+.user-name{
+  font-size: 36rpx;
+  display: block;
+  font-weight: 600;
+}
+
+.realname{
+  height: 28rpx;
+  width: 28rpx;
+}
+
+.credit{
+  height: 26rpx;
+  width: 48rpx;
+  margin-top: 30rpx;
+  margin-left: 16rpx;
+}
+
+.red-tab{
+  height: 175rpx;
+  width: 675rpx;
+  margin-left: 36rpx;
+  margin-top: 40rpx;
+  border-radius: 20rpx;
+  background-color: #F25551;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.red-item{
+  text-align: center;
+  margin-top: 26rpx;
+}
+
+.red-item text{
+  font-size: 24rpx;
+}
+
+.my-release{
+  font-size: 50rpx;
+}
+
+.my-sell{
+  font-size: 50rpx;
+}
+
+.my-rent{
+  font-size: 50rpx;
+}
+
+.collection-group{
+  padding: 36rpx;
+}
+
+.collection-top-left{
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.collection-top-right{
+  float: right;
+  margin-right: 18rpx;
+  align-items: center;
+  display: flex;
+  margin-top: 10rpx;
+}
+.collection-top-right text{
+  font-size: 24rpx;
+  color: #B3BBC6;
+  margin-left: 8rpx;
+
+}
+
+.col-number{
+  width: 24rpx;
+  height: 24rpx;
+  border-radius: 2rpx;
+  color: #fff;
+  background-color: #F25551;
+  font-size: 18rpx;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.collection-goods{
+ 
+  margin-left: 36rpx;
+  white-space: nowrap;
+  margin-bottom: 36rpx;
+}
+
+.collection-goods-image{
+  height: 254rpx;
+  width: 271rpx;
+  border-radius: 20rpx;
+  display: inline-block;
+  margin-right: 24rpx;
+  border: 1rpx solid #fafafa;
+}
+  
+.collection-goods-image:last-of-type{
+  margin-right:72rpx;
+}  
+
+.person-item{
+  width: 100%;
+  height: 96rpx;
+  font-size: 28rpx;
+  color: #303030;
+  background-color: #fff;
+}
+
+.item-common{
+  padding: 36rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-common-left{
+  display: flex;
+  align-items: center;
+}
+
+.realname-right{
+  display: flex;
+  align-items: center;
+  font-size: 22rpx;
+  
+  color: #F25551;
+}
+
+.myauction-image{
+  width: 43rpx;
+  height: 39rpx;
+}
+
+.realname-image{
+  width: 38.5rpx;
+  height: 28.5rpx;
+}
+
+.message-image{
+  width: 34rpx;
+  height: 34rpx;
+}
+
+.install-image{
+  width: 38rpx;
+  height: 35rpx;
+}
+
+.item-common text{
+  margin-left: 20rpx;
+}
+
+.Arrow{
+  width: 13rpx;
+  height: 18rpx;
+  margin-top: 8rpx;
+  margin-right: 20rpx;
+}
+
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+

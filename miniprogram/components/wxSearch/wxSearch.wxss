@@ -1,0 +1,94 @@
+page{
+  background-color: #FAFAFA;
+}
+
+.head_search{
+  position:relative;
+  padding:0 36rpx 20rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.text_search{
+  box-sizing:border-box;
+  padding-left:10rpx;
+  height: 72rpx;
+  background-color: #fff;
+  border-bottom: 2rpx solid #F25551;
+  font-size: 28rpx;
+  color: #303030;
+  flex: 1;
+}
+
+image{
+  width:100%; 
+  height:100%; 
+}
+
+.searchbox{
+  height: 70rpx;
+  width: 92rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 2rpx solid #F25551;
+}
+
+.icon_search{
+  width: 46.8rpx;
+  height: 32.6rpx;
+  margin-left: 20rpx;
+}
+.result_search{
+  position:fixed;top:108rpx;left:0;
+  width:100%;height: calc(100vh - 108rpx);
+}
+.li_list_search{
+  height:96rpx;
+  padding:0 36rpx;
+  display:flex;
+  align-content:center;
+  line-height:89rpx;
+  background-color: #fff;
+}
+.li_list_search text{
+  font-size:28rpx;
+  color: #303030;
+}
+.icon-waiting{
+  width:29rpx;
+  height:29rpx;
+}
+
+.icon-cancel{
+  width: 15rpx;
+  height: 15rpx;
+  margin-right: 10rpx;
+}
+
+.hots_search{
+  padding-left:40rpx;
+  padding-right:28rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.title_hotsSearch{
+  line-height:83rpx;
+  font-size: 24rpx;
+  
+}
+.list_hotsSearch{
+  display:flex;
+  flex-wrap:wrap;
+}
+.list_hotsSearch text{
+  margin-bottom:25rpx;margin-right:26rpx;
+  padding-left:25rpx;padding-right:25rpx;
+  box-shadow:0 3px 40px rgba(242, 85, 81, 0.4); 
+  text-align:center;
+  font-size: 24rpx;
+  color: #fff;
+  background-color: #F25551;
+  border-radius: 30rpx;
+  padding: 10rpx 30rpx;
+}
